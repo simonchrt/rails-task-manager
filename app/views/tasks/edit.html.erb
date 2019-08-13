@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="col-12 col-md-6 col-lg-6">
+    <h2 class="text-center mb-5">Update
+      <%=@task.title%></h2>
+    <%= form_for(@task) do |f| %>
+
+      <%= f.text_field :title , class:"form-control"%>
+      <%= f.text_field :details, class:"form-control" %>
+      <%= f.check_box :completed%>
+
+      <%= f.submit class:"btn btn-primary w-10" %>
+    <% end %>
+</div>
+</div>

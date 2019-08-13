@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-6">
+      <h2 class="text-center mb-5">New Task</h2>
+      <form action="/tasks" method="post">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" name ="task[title]"class="form-control" placeholder="Title" id="title">
+          </div>
+          <div class="col">
+            <input type="text" name = "task[details]" class="form-control" placeholder="Details" id="details">
+          </div>
+          <button type="submit" class="btn btn-primary w-10">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
